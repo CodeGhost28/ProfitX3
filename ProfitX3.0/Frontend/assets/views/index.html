@@ -1,25 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProfitX - Welcome</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>ProfitX - AI Trading Signals</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <!-- Add any additional meta tags, favicons, etc. -->
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <img src="assets/images/profitx-logo.png" alt="ProfitX Logo">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="path-to-your-logo/profitx-logo.png" alt="ProfitX Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
             <h1>Welcome to ProfitX</h1>
-            <nav>
-                <a href="login.html">Login</a>
-                <a href="register.html">Register</a>
-            </nav>
-        </header>
-        <section class="main-content">
-            <h2>Your Ultimate Trading Assistant</h2>
-            <p>Track market trends, generate signals, and manage your portfolio with ease.</p>
+            <p>Unlock the Power of AI-Driven Trading Signals.</p>
+            <a href="#features" class="cta-button">Discover More</a>
         </section>
-    </div>
+
+        <section id="features" class="features-section">
+            <h2>Features</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <h3>AI Trading Signals</h3>
+                    <p>Receive accurate trading signals powered by advanced AI algorithms using indicators such as Stochastics and ATR.</p>
+                </div>
+                <div class="card">
+                    <h3>Multiple Timeframes</h3>
+                    <p>Analyze markets on various timeframes - M1, M5, M15, M30 - and make informed decisions.</p>
+                </div>
+                <div class="card">
+                    <h3>Martingale Strategy</h3>
+                    <p>Built-in martingale strategy for active traders to maximize profits.</p>
+                </div>
+                <div class="card">
+                    <h3>Live Market Data</h3>
+                    <p>Stay updated with real-time market data for popular assets like currencies, metals, and stocks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+            <h2>Pricing Plans</h2>
+            <div class="pricing-tables">
+                <div class="table">
+                    <h3>Basic</h3>
+                    <p>ZAR 100/month</p>
+                    <a href="/register" class="cta-button">Get Started</a>
+                </div>
+                <div class="table">
+                    <h3>Pro</h3>
+                    <p>ZAR 300/month</p>
+                    <a href="/register" class="cta-button">Get Started</a>
+                </div>
+                <div class="table">
+                    <h3>Premium</h3>
+                    <p>ZAR 500/month</p>
+                    <a href="/register" class="cta-button">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About ProfitX</h2>
+            <p>ProfitX is a cutting-edge AI-powered platform designed to assist traders in maximizing their profits through precise signal generation and advanced trading strategies.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form action="/contact" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ProfitX. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
