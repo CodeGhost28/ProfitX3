@@ -1,0 +1,159 @@
+// Basic Variables
+$primary-color: #3b3f51;
+$secondary-color: #29abe2;
+$text-color: #ffffff;
+$background-color: #f4f4f9;
+$font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Global Styles
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+    color: $primary-color;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primary-color;
+    margin-bottom: 20px;
+}
+
+a {
+    color: $secondary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: darken($secondary-color, 10%);
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: $primary-color;
+    color: $text-color;
+    padding: 20px 0;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+}
+
+nav {
+    ul {
+        list-style: none;
+        padding: 0;
+        
+        li {
+            display: inline;
+            margin-right: 10px;
+
+            a {
+                color: $text-color;
+                padding: 10px;
+                border-radius: 5px;
+                background: $secondary-color;
+
+                &:hover {
+                    background: lighten($secondary-color, 10%);
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: $primary-color;
+    color: $text-color;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    p {
+        margin: 0;
+    }
+}
+
+// Custom Components
+.card {
+    background: $text-color;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+
+    h2 {
+        margin-top: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.button {
+    display: inline-block;
+    background: $secondary-color;
+    color: $text-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+        background: darken($secondary-color, 10%);
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: $primary-color;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+}
+
+.alert {
+    padding: 15px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+// Utility Classes
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
